@@ -18,7 +18,7 @@ body {
     background-color: white;
     border-radius: 10px;
     padding: 20px;
-    width: 30%; /* Default width for desktop */
+    width: 25%; /* Default width for desktop */
     max-width: 400px; /* Maximum width for desktop */
     box-sizing: border-box;
 }
@@ -49,14 +49,14 @@ p {
 }
 
 /* Media Queries for Mobile (375px) */
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 376px) {
     body {
         flex-direction: column; /* Stack content vertically */
         height: auto; /* Remove height restriction */
     }
 
     .qr-code-container {
-        width: 90%; /* Make the container take up more width on mobile */
+        width: 75%; /* Make the container take up more width on mobile */
         padding: 15px; /* Reduce padding for smaller screens */
     }
 
@@ -74,7 +74,7 @@ p {
 }
 
 /* Media Queries for Desktop (1440px) */
-@media screen and (min-width: 1440px) {
+@media screen and (min-width: 1441px) {
     .qr-code-container {
         width: 25%; /* Narrower container on large screens */
         padding: 25px; /* Add more padding on larger screens */
