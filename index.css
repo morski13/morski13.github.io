@@ -1,37 +1,94 @@
-.qr-code-container{
-    flex-direction: column;
-    text-align: center;
-    background-color: white;
-    border-radius: 10px;
-    padding: 20px;
-    width:30%;
-}
-
-body{
+/* Default body style for larger screens (desktop) */
+body {
     background-color: hsl(212, 45%, 89%);
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
     font-size: 15px;
+    margin: 0;
+    font-family: 'Outfit', sans-serif;
 }
 
-.qr-code-img{
+/* QR code container */
+.qr-code-container {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    background-color: white;
+    border-radius: 10px;
+    padding: 20px;
+    width: 30%; /* Default width for desktop */
+    max-width: 400px; /* Maximum width for desktop */
+    box-sizing: border-box;
+}
+
+/* QR code image */
+.qr-code-img {
+    max-width: 100%; /* Ensure the image scales with the container */
+    height: auto; /* Maintain aspect ratio */
     border-radius: 10px;
 }
 
-.text-container{
+/* Text container */
+.text-container {
     text-align: center;
     color: hsl(218, 44%, 22%);
     font-family: 'Outfit', sans-serif;
 }
 
-h1{
-    
+/* Heading style */
+h1 {
     font-weight: 700;
 }
 
-p{
+/* Paragraph style */
+p {
     color: hsl(216, 15%, 48%);
     font-weight: 400;
+}
+
+/* Media Queries for Mobile (375px) */
+@media screen and (max-width: 375px) {
+    body {
+        flex-direction: column; /* Stack content vertically */
+        height: auto; /* Remove height restriction */
+    }
+
+    .qr-code-container {
+        width: 90%; /* Make the container take up more width on mobile */
+        padding: 15px; /* Reduce padding for smaller screens */
+    }
+
+    .text-container {
+        font-size: 0.9rem; /* Smaller font size for mobile */
+    }
+
+    h1 {
+        font-size: 1.5rem; /* Adjust heading size for mobile */
+    }
+
+    p {
+        font-size: 1rem; /* Adjust paragraph size for mobile */
+    }
+}
+
+/* Media Queries for Desktop (1440px) */
+@media screen and (min-width: 1440px) {
+    .qr-code-container {
+        width: 25%; /* Narrower container on large screens */
+        padding: 25px; /* Add more padding on larger screens */
+    }
+
+    .text-container {
+        font-size: 1.2rem; /* Increase font size for desktop */
+    }
+
+    h1 {
+        font-size: 2rem; /* Larger heading for desktop */
+    }
+
+    p {
+        font-size: 1.1rem; /* Larger paragraph font for desktop */
+    }
 }
