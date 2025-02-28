@@ -52,7 +52,7 @@ p {
 @media screen and (max-width: 376px) {
     body {
         flex-direction: column; /* Stack content vertically */
-        height: auto; /* Remove height restriction */
+        height: 100%; /* Remove height restriction */
     }
 
     .qr-code-container {
