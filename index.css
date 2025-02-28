@@ -9,7 +9,7 @@ body{
     background-color: hsl(212, 45%, 89%);
 }
 
-.qr-code{
+.qr-code-img{
     max-width: 200px;
     max-height: 200px;
     border-radius: 10px;
