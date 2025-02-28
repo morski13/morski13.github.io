@@ -1,6 +1,5 @@
 .qr-code-container{
     text-align: center;
-    max-width: fit-content;
     margin: 0 auto;
     background-color: hsl(212, 45%, 89%);
     border-radius: 10px;
